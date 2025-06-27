@@ -10,7 +10,7 @@ from keras import backend as K
 
 
 #Load Subject A Raw Data
-Subject_A_Train_Raw = sio.loadmat("C:\\Users\\prady\\Downloads\\BCI_Virtual_Keyboard\\P300 Speller Using CNN\\datasets\\Subject_A_Train.mat")
+Subject_A_Train_Raw = sio.loadmat("datasets\\Subject_A_Train.mat")
 a_signal_raw = Subject_A_Train_Raw['Signal'].astype('float32')
 a_flash_raw = Subject_A_Train_Raw['Flashing'].astype('float32')
 a_type_raw = Subject_A_Train_Raw['StimulusType'].astype('int')
